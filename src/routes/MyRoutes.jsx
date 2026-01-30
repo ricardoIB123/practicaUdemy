@@ -7,6 +7,7 @@ import { PerfilPage } from "../pages/PerfilPage"
 import { ConfiguracionPage } from "../pages/ConfiguracionPage"
 import { SearchParamsPage } from "../pages/SearchParamsPage"
 import { LayoutMain } from "../layouts/LayoutMain"
+import {ApiPage} from '../pages/ApiPage'
 export const MyRoutes = () => {
     return (
         <>
@@ -17,6 +18,7 @@ export const MyRoutes = () => {
                     <Route path="/react" element={<React />} />
                     <Route path="/imagenes" element={<ImagenesPage />} />
                     <Route path="/search" element={<SearchParamsPage />} />
+                    <Route path="/apis" element={<ApiPage />} />
                     <Route path="/rutasAnidadas" element={<RutasAnidadasPage />}>
                         <Route index element={<Navigate to={"perfil/10"} replace />} />
                         <Route path="perfil/:id" element={<PerfilPage />} />

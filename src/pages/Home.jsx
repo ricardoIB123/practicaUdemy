@@ -7,7 +7,8 @@ export const Home = () => {
         { tema: 'useEffect', to:'/react' },
         { tema: 'Imagenes', to:`/imagenes?src=${UrlImage}`},  // QueryParams
         { tema: 'Rutas Anidadas', to:'/rutasAnidadas'},
-        { tema: 'Ejemplos Search', to:'/search'}
+        { tema: 'Ejemplos Search', to:'/search'},
+        { tema: 'Apis', to:'/apis'}
     ]
     return (
         <>
