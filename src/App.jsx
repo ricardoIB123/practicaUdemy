@@ -1,15 +1,22 @@
+import { MyRoutes } from "./routes/MyRoutes";
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-import { MyRoutes } from './routes/MyRoutes'
+const queryClient = new QueryClient();
+
 function App() {
-
-
   return (
-    <>
-      <div>
-        <MyRoutes />
-      </div>
-    </>
-  )
+    <QueryClientProvider client={queryClient}>
+      <MyRoutes />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
