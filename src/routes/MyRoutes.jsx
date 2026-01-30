@@ -7,7 +7,7 @@ import { PerfilPage } from "../pages/PerfilPage"
 import { ConfiguracionPage } from "../pages/ConfiguracionPage"
 import { SearchParamsPage } from "../pages/SearchParamsPage"
 import { LayoutMain } from "../layouts/LayoutMain"
-import { ApiPage } from "../pages/ApiPage"
+import {ApiPage} from '../pages/ApiPage'
 export const MyRoutes = () => {
     return (
         <>

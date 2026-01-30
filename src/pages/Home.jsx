@@ -8,7 +8,11 @@ export const Home = () => {
         { tema: 'Imagenes', to:`/imagenes?src=${UrlImage}`},  // QueryParams
         { tema: 'Rutas Anidadas', to:'/rutasAnidadas'},
         { tema: 'Ejemplos Search', to:'/search'},
+<<<<<<< HEAD
         { tema: "apis", to:"/apis"}
+=======
+        { tema: 'Apis', to:'/apis'}
+>>>>>>> 8959b80d3c74370e9ff99e8bbfd2f0316eeeb128
     ]
     return (
         <>
